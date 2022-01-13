@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: skyblue;
+    --secondary-color: gray;
+}
+
+header {
+    background-color: slategray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h1 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 25px 25px;
+}
+
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 30px 25px 25px 25px;
+}
+
+header a {
+        
+        text-decoration: none;
+        color: var(--primary-color);
+        border-bottom: solid var(--primary-color) 1px ;}
