@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: slategray;
 }
 
 :root {
@@ -14,12 +15,14 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
 }
 
-h1 {
+header h1 {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: 25px 25px;
+    padding: 15px 25px;
 }
 
 
@@ -39,7 +42,7 @@ header a, footer a{
         
     text-decoration: none;
     color: var(--primary-color);
-    border-bottom: solid var(--primary-color) 1px ;}
+    border-bottom: solid var(--primary-color) 3px ;}
 
 .hero {
     background-image: url("../images/portfolio-background-header.jpg");
@@ -54,24 +57,43 @@ header a, footer a{
 .box1 {
     position: relative;
     background-color: var(--secondary-color);
+    text-align: right;
 }
 .subtitle {
-    position: relative;
     bottom: 0;
     right: 0;
     color: var(--primary-color)
 }
+
+#About-me, #Work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#About-me h2, #Work h2, footer h2 {
+    background-color: slategray;
+    color: var(--primary-color);
+    width: 300px;
+    margin-bottom: 5px;
+    padding: 25px 30px ;
+    border-right: solid var(--primary-color) 3px;
+}
+
 
 footer {
     background-color: slategray;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-footer h2 {
-    color: var(--primary-color);
-    padding: 25px 18px 
 }
 
 footer ul {
