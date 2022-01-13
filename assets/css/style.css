@@ -35,8 +35,53 @@ header nav ul li {
     padding: 30px 25px 25px 25px;
 }
 
-header a {
+header a, footer a{
         
-        text-decoration: none;
-        color: var(--primary-color);
-        border-bottom: solid var(--primary-color) 1px ;}
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: solid var(--primary-color) 1px ;}
+
+.hero {
+    background-image: url("../images/portfolio-background-header.jpg");
+    /* image source url https://jessicaroots.com/project/black-friday/portfolio-background-header/ */
+    height: 300px;
+    width: 100%;
+    background-position: 50%;
+    justify-content: center;
+    
+}
+
+.box1 {
+    position: relative;
+    background-color: var(--secondary-color);
+}
+.subtitle {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    color: var(--primary-color)
+}
+
+footer {
+    background-color: slategray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer h2 {
+    color: var(--primary-color);
+    padding: 25px 18px 
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+footer ul li {
+    padding: 30px 25px 25px 25px;
+}
