@@ -80,7 +80,6 @@ header a, footer a{
 }
 
 #About-me h2, #Work h2, footer h2 {
-    background-color: slategray;
     color: var(--primary-color);
     width: 300px;
     margin-bottom: 5px;
@@ -88,9 +87,42 @@ header a, footer a{
     border-right: solid var(--primary-color) 3px;
 }
 
+#buddy {
+    height: 500px;
+    width: 1200px;
+    border: solid var(--primary-color) 4px;
+}   
+
+.run-buddy a {
+    position: relative;
+    border: solid var(--primary-color) 10px;
+    left: -1175px;
+    top: -50px
+}
+
+.four-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.four-boxes img {
+    height: 400px;
+    width: 400px;
+    border: solid var(--primary-color) 4px;
+    margin: 40px;
+}
+
+.four-boxes a {
+    position: relative;
+    border: solid var(--primary-color) 7px;
+    left: -425px;
+    top: -75px;
+}
 
 footer {
-    background-color: slategray;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -107,3 +139,4 @@ footer ul {
 footer ul li {
     padding: 30px 25px 25px 25px;
 }
+
