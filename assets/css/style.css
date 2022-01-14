@@ -60,8 +60,9 @@ header a, footer a{
     text-align: right;
 }
 .subtitle {
-    bottom: 0;
-    right: 0;
+    position: absolute;
+    top: 250px;
+    right: 20px;
     color: var(--primary-color)
 }
 
