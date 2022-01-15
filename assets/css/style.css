@@ -17,6 +17,7 @@ header {
     justify-content: space-between;
     position: -webkit-sticky;
     position: sticky;
+    top: 0;
 }
 
 header h1 {
@@ -41,7 +42,8 @@ header nav ul li {
 header a {
     text-decoration: none;
     color: var(--primary-color);
-    border-bottom: solid var(--primary-color) 3px ;}
+    border-bottom: solid var(--primary-color) 3px;
+}
 
 .hero {
     background-image: url("../images/portfolio-background-header.jpg");
@@ -50,15 +52,15 @@ header a {
     width: 100%;
     background-position: 50%;
     justify-content: center;
-    
 }
 
-.box1 {
+.hero .box1 {
     position: relative;
     background-color: var(--secondary-color);
     text-align: right;
 }
-.subtitle {
+
+.hero .subtitle {
     position: absolute;
     top: 250px;
     right: 20px;
@@ -71,7 +73,7 @@ header a {
     flex-wrap: wrap;
 }
 
-.sections h2 {
+.sections h2, .contact h2 {
     color: var(--primary-color);
     width: 300px;
     margin-bottom: 5px;
@@ -79,67 +81,76 @@ header a {
     border-right: solid var(--primary-color) 3px;
 }
 
-.material {
+.sections .about {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
 }
 
-.box2 {
-    display: flex;
-    flex-wrap: wrap;
+.sections .about .descr {
     flex-direction: column;
+    display: flex;
+    row-gap: 10px;
+    flex: 1;
     align-items: center;
 }
 
-#buddy {
-    height: 500px;
-    width: 1200px;
-    border: solid var(--primary-color) 4px;
-}   
-
-.run-buddy a {
-    position: relative;
-    border: solid var(--primary-color) 10px;
-    left: -1175px;
-    top: -50px
+.sections .work {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
 }
 
-.four-boxes {
+.sections .work .four-boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    flex: 1;
 }
 
-.four-boxes img {
+.sections .work .four-boxes .images {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.sections .work .four-boxes #runbuddy {
+    height:500px;
+    width: 1000px;
+}
+
+.sections .work .four-boxes .images img {
     height: 400px;
     width: 400px;
     border: solid var(--primary-color) 4px;
-    margin: 40px;
 }
 
-.four-boxes a {
-    position: relative;
+.sections .work .four-boxes .images a {
     border: solid var(--primary-color) 7px;
-    left: -425px;
-    top: -75px;
+    text-decoration: none;
+    width: 125px;
 }
 
-.material ul {
+.contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.contact ul {
+    display: flex;
     align-items: center;
     list-style: none;
 }
 
-.material ul li {
+.contact ul li {
     padding: 30px 25px 25px 25px;
 }
 
-.material ul li a {
+.contact ul li a {
     text-decoration: none;
     color: var(--primary-color);
     border-bottom: solid var(--primary-color) 3px ;
