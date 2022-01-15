@@ -38,8 +38,7 @@ header nav ul li {
     padding: 30px 25px 25px 25px;
 }
 
-header a, footer a{
-        
+header a {
     text-decoration: none;
     color: var(--primary-color);
     border-bottom: solid var(--primary-color) 3px ;}
@@ -66,11 +65,25 @@ header a, footer a{
     color: var(--primary-color)
 }
 
-#About-me, #Work {
+.sections {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.sections h2 {
+    color: var(--primary-color);
+    width: 300px;
+    margin-bottom: 5px;
+    padding: 25px 30px ;
+    border-right: solid var(--primary-color) 3px;
+}
+
+.material {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
 }
 
 .box2 {
@@ -78,14 +91,6 @@ header a, footer a{
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-}
-
-#About-me h2, #Work h2, footer h2 {
-    color: var(--primary-color);
-    width: 300px;
-    margin-bottom: 5px;
-    padding: 25px 30px ;
-    border-right: solid var(--primary-color) 3px;
 }
 
 #buddy {
@@ -108,7 +113,6 @@ header a, footer a{
     align-items: center;
 }
 
-
 .four-boxes img {
     height: 400px;
     width: 400px;
@@ -123,13 +127,7 @@ header a, footer a{
     top: -75px;
 }
 
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-footer ul {
+.material ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -137,7 +135,12 @@ footer ul {
     list-style: none;
 }
 
-footer ul li {
+.material ul li {
     padding: 30px 25px 25px 25px;
 }
 
+.material ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: solid var(--primary-color) 3px ;
+}
