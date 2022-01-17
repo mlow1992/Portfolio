@@ -29,7 +29,7 @@ header {
 header h1 {
     background-color: var(--primary-color);
     color: var(--tertiary-color);
-    padding: 2%;
+    padding: 1%;
     font-size: 30px;
 }
 
@@ -51,13 +51,17 @@ header a {
     font-size: 30px;
 }
 
+header a:hover {
+    color:violet;
+}
+
 .hero {
     background-image: url("../images/portfolio-background-header.jpg");
     /* image source url https://jessicaroots.com/project/black-friday/portfolio-background-header/ */
     height: 300px;
     width: 100%;
     background-position: 50%;
-    justify-content: center;
+    justify-content: cover;
 }
 
 .hero .box1 {
@@ -93,8 +97,10 @@ header a {
 .sections .about {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     column-gap: 10px;
+}
+.sections .about h2 {
+    margin-top: 5px;
 }
 
 .sections .about .descr {
@@ -102,6 +108,7 @@ header a {
     display: flex;
     row-gap: 10px;
     flex: 1;
+    padding: 15px;;
     align-items: center;
 }
 
@@ -163,6 +170,11 @@ header a {
     text-align: center;
 }
 
+.sections .work .four-boxes .images a:hover {
+    border: dashed var(--primary-color) 5px;
+
+}
+
 .contact {
     display: flex;
     flex-wrap: wrap;
@@ -187,6 +199,10 @@ header a {
     font-size: 20px;
 }
 
+.contact ul li a:hover {
+    color: var(--tertiary-color);
+}
+
 /* Media Query for smaller desktops */
 @media screen and (max-width:980px) {
 
@@ -208,12 +224,12 @@ header a {
     }
 
     #first-link {
-        top: 250px;
+        top: 110px;
         left: -570px;
     }
 
     .sections .work .four-boxes .images a {
-        top: 150px;
+        top: 70px;
         left: -185px;
     }
 
