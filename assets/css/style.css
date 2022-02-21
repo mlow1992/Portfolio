@@ -27,7 +27,6 @@ header {
 }
 
 header h1 {
-    background-color: var(--primary-color);
     color: var(--tertiary-color);
     padding: 1%;
     font-size: 30px;
@@ -140,7 +139,7 @@ header a:hover {
     align-items: center;
 }
 
-.sections .work .four-boxes #runbuddy {
+.sections .work .four-boxes #firstCard {
     height:400px;
     width: 80%;
 }
@@ -152,21 +151,20 @@ header a:hover {
 }
 
 #first-link {
-    bottom: 60px;
-    left: -475px
+    bottom: 5rem;
 }
 
 .sections .work .four-boxes .images a {
     border: solid var(--tertiary-color) 3px;
     padding: 6px 0;
     color: var(--primary-color);
-    font-size: 18px;
+    font-size: 80%;
     text-decoration: none;
     width: 125px;
-    height: 35px;
+    height: 50px;
     position:relative;
-    bottom: 60px;
-    left: -75px;
+    bottom: 4rem;
+    left: 5rem;
     text-align: center;
 }
 
@@ -219,18 +217,18 @@ header a:hover {
         width: 200px;
     }
 
-    .sections .work .four-boxes #runbuddy {
+    .sections .work .four-boxes #firstCard {
         height: 300px;
     }
 
     #first-link {
-        top: 110px;
-        left: -570px;
+        top: 7rem;
+        left: -150px;
     }
 
     .sections .work .four-boxes .images a {
         top: 70px;
-        left: -185px;
+        left: -130px;
     }
 
 }
@@ -276,7 +274,7 @@ header a:hover {
         align-items: center;
     }
 
-    .sections .work .four-boxes #runbuddy {
+    .sections .work .four-boxes #firstCard {
         height: 300px;
     }
 
@@ -287,12 +285,12 @@ header a:hover {
 
     #first-link {
         top: -70px;
-        left: -250px;
+        left: 195px;
     }
 
     .sections .work .four-boxes .images a {
-        top: -75px;
-        left: -120px;
+        top: -70px;
+        left: 100px;
     }
 
     .sections .contact ul li a {
@@ -324,13 +322,13 @@ header a:hover {
         font-size: 15px;
     }
 
-    .sections .work .four-boxes #runbuddy {
+    .sections .work .four-boxes #firstCard {
         height: 300px;
     }
 
     #first-link {
         top: -65px;
-        left: -160px;
+        left: 160px;
     }
 
     .sections .work .four-boxes .images img {
@@ -339,7 +337,7 @@ header a:hover {
 
     .sections .work .four-boxes .images a{
         top: -65px;
-        left: -70px;
+        left: 70px;
     }
 
     .sections .contact h2 {
